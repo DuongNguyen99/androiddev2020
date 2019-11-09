@@ -11,6 +11,6 @@ Student Info
 =======================
 
 * Name: Nguyễn Đăng Dương 
-* ID: UTSH BI8-035  
+* ID: USTH BI8-035  
 * Group ID: 8
 
