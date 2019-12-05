@@ -22,6 +22,6 @@
         android:id="@+id/forecast_fragment"
         android:layout_weight="4">
     </fragment>
-
+,
 </LinearLayout>
 

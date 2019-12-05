@@ -6,7 +6,7 @@
     tools:context=".WeatherFragment"
     android:id="@+id/weather_fragment"
     android:padding="20px"
-    >
+    android:background="@drawable/frame">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,8 +14,8 @@
         android:id="@+id/textTopLeft"
         android:textSize="24dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="10px"
-        android:layout_marginLeft="10px"/>
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="50px"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,8 +23,8 @@
         android:id="@+id/textTopRight"
         android:textSize="24dp"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="10px"
-        android:layout_marginTop="10px"/>
+        android:layout_marginRight="50px"
+        android:layout_marginTop="30px"/>
 
     <ImageView
         android:id="@+id/imageCenter"
