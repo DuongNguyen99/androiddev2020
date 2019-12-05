@@ -1,11 +1,15 @@
 package vn.edu.usth.weather;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.telecom.Call;
 import android.util.Log;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
+//import android.widget.Adapter;
 
 public class WeatherActivity extends AppCompatActivity {
+    private ViewPager viewPager;
+    private CollectionAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,13 +17,17 @@ public class WeatherActivity extends AppCompatActivity {
         setContentView(R.layout.activity_weather);
         Log.i("Tag","It's got on create");
 
-        // Create a new Fragment to be placed in the activity layout
-        ForecastFragment firstFragment = new ForecastFragment();
-        // Add the fragment to the 'container' FrameLayout
-        getSupportFragmentManager().beginTransaction().add(R.id.secondLayout, firstFragment).commit();
+        viewPager = findViewById(R.id.viewpager_layout);
+        adapter = new CollectionAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
 
-        WeatherFragment secondFragment = new WeatherFragment();
-        getSupportFragmentManager().beginTransaction().add(R.id.firstLayout, secondFragment).commit();
+        // Create a new Fragment to be placed in the activity layout
+        //ForecastFragment firstFragment = new ForecastFragment();
+        // Add the fragment to the 'container' FrameLayout
+        //getSupportFragmentManager().beginTransaction().add(R.id.secondLayout, firstFragment).commit();
+
+        //WeatherFragment secondFragment = new WeatherFragment();
+        //getSupportFragmentManager().beginTransaction().add(R.id.firstLayout, secondFragment).commit();
     }
     @Override
     protected void onStart() {
