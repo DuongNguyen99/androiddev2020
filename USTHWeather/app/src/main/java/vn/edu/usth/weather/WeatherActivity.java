@@ -4,12 +4,13 @@ import android.os.Bundle;
 import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
+import com.google.android.material.tabs.TabLayout;
 
-//import android.widget.Adapter;
 
 public class WeatherActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private CollectionAdapter adapter;
+    private TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,9 @@ public class WeatherActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewpager_layout);
         adapter = new CollectionAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
+
+        tabLayout = findViewById(R.id.tab_layout);
+        tabLayout.setupWithViewPager(viewPager);
 
         // Create a new Fragment to be placed in the activity layout
         //ForecastFragment firstFragment = new ForecastFragment();
