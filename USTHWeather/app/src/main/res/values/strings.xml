@@ -1,7 +1,19 @@
-<resources>
-    <string name="app_name">USTH Weather</string>
+<?xml version="1.0" encoding="utf-8"?>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="weather_icon">weather icon</string>
+<resources>
+    <string name="app_name">USTH_Weather</string>
+
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <string name="rainy">Rainy \n 20C - 25C</string>
+    <string name="partly_cloudy">Partly Cloudy \n 24C - 30C</string>
+    <string name="sunny">Sunny \n 27C - 33C</string>
+    <string name="thunderstorm">Thunderstorm \n 18C - 24C</string>
+    <string name="cloudy">Cloudy \n 23C - 28C</string>
 </resources>

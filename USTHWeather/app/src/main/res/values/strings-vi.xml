@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">USTH_Weather</string>
+
+    <string name="thu_hai">Thứ Hai</string>
+    <string name="thu_ba">Thứ Ba</string>
+    <string name="thu_tu">Thứ Tư</string>
+    <string name="thu_nam">Thứ Năm</string>
+    <string name="thu_sau">Thứ Sáu</string>
+    <string name="thu_bay">Thứ Bảy</string>
+    <string name="chu_nhat">Chủ Nhật</string>
+
+    <string name="mua">Có mưa\n20C - 25C</string>
+    <string name="may_rai_rac">Có mây rải rác\n24C - 30C</string>
+    <string name="nang">Có nắng\n27C - 33C</string>
+    <string name="bao">Cảnh báo bão\n18C - 24C</string>
+    <string name="may">Có mây \n23C -28C</string>
+
+</resources>
